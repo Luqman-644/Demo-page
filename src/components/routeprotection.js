@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
-export default function AuthGuard({ children }) {
+export default function RouteProtection({ children }) {
   const pathname = usePathname();
   const router = useRouter();
   const [loading, setLoading] = useState(true);
